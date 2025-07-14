@@ -8,7 +8,7 @@
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Galería</title>
+    <title>Inicio</title>
 </head>
 
 <body>
@@ -26,10 +26,10 @@
                             <a class="nav-link active" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Galería</a>
+                            <a class="nav-link" href="gallery.html">Galería</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre Nosotros</a>
+                            <a class="nav-link" href="about.html">Sobre Nosotros</a>
                         </li>
                     </ul>
                 </div>
@@ -46,7 +46,7 @@
                     <div class="col-10 col-sm-8 col-lg-6"> 
                         <img src="assets/gallery.jpg" class="d-block mx-lg-auto img-fluid" alt="Imagen Galería" width="700" height="500" loading="lazy"> </div>
                     <div class="col-lg-6">
-                        <h1 class="display-5 fw-bold  mb-3">Galería</h1>
+                        <h1 class="display-5 fw-bold  mb-3">Galería Fotográfica</h1>
                         <p class="lead mb-4 ">
                             Proyecto de galería de fotografías, podrás explorar imágenes artísticas con sus autores y categorías.
                         </p>
@@ -70,23 +70,23 @@
                 <div class="text-center mb-5">
                     <h2 class="display-5 fw-bold mb-4">Imágenes Destacadas</h2>
                     <p class="lead text-muted">
-                        Imágenes más impactantes, seleccionadas por su calidad artística y narrativa visual.
+                        Fotos más impactantes, seleccionadas por su calidad artística y narrativa visual.
                     </p>
                 </div>
                 
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col d-flex justify-content-center">
-                        <div class="card shadow-sm" data-description="Una vista espectacular de las montañas Kaçkar al amanecer.">
+                        <div class="card card-home shadow-sm" data-description="Animal y vida salvaje en su hábitat natural.">
                             <img src="assets/1.jpg" class="card-img-top" alt="Featured Image 1">
                             <div class="card-body">
-                                <h5 class="card-title">Kaçkar mountains, Turkey</h5>
-                                <h6 class="card-subtitle mb-2 text-body-secondary">Özer Yenihayat</h6>
+                                <h5 class="card-title">Animal, Wild, Wildlife image.</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">javiercalvoparapar</h6>
                             </div>
                         </div>
                     </div>
 
                     <div class="col d-flex justify-content-center">
-                        <div class="card shadow-sm" data-description="Un hermoso perro golden retriever con un brillo especial en sus ojos.">
+                        <div class="card card-home shadow-sm" data-description="Un hermoso perro golden retriever con un brillo especial en sus ojos.">
                             <img src="assets/2.jpg" class="card-img-top" alt="Featured Image 2">
                             <div class="card-body">
                                 <h5 class="card-title">Golden retriever puppy amber</h5>
@@ -96,7 +96,7 @@
                     </div>
 
                     <div class="col d-flex justify-content-center">
-                        <div class="card shadow-sm" data-description="Una vista panorámica del monte Utliberg en Suiza, capturando su belleza natural.">
+                        <div class="card card-home shadow-sm" data-description="Una vista panorámica del monte Utliberg en Suiza, capturando su belleza natural.">
                             <img src="assets/3.jpg" class="card-img-top" alt="Featured Image 2">
                             <div class="card-body">
                                 <h5 class="card-title">Utliberg, Switzerland</h5>
@@ -134,15 +134,49 @@
                 <div class="text-center mb-5">
                     <h2 class="display-5 fw-bold mb-4">Categorías</h2>
                     <p class="lead text-muted">
-                        Explora nuestras diferentes categorías fotográficas, cada una con su propio estilo y narrativa única.
+                        Explora las diferentes categorías fotográficas, cada una con su propio estilo y narrativa única.
                     </p>
                 </div>
                 
-                <div id="categories-grid" class="row g-4">
+                <div class="row g-4">
+                    <div class="card card-home">
+                        <div class="card-body">
+                            <h5 class="card-title">Naturaleza</h5>
+                            <p class="card-text">Explora la belleza de la naturaleza a través de impresionantes fotografías.</p>
+                            <a href="#" class="btn btn-outline-primary">Ver más</a>
+                        </div>
+                    </div>
+
+                    <div class="card card-home">
+                        <div class="card-body">
+                            <h5 class="card-title">Animales</h5>
+                            <p class="card-text">Descubre el mundo animal con imágenes que capturan su esencia.</p>
+                            <a href="#" class="btn btn-outline-primary">Ver más</a>
+                        </div>
+                    </div>
+
+                    <div class="card card-home">
+                        <div class="card-body">
+                            <h5 class="card-title">Lugares del mundo</h5>
+                            <p class="card-text">Admira lugares icónicos y paisajes impresionantes de todo el mundo.</p>
+                            <a href="#" class="btn btn-outline-primary">Ver más</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Pie de página -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center p-3 m-4 border-top bg-white">
+        <p class="col-md-4 mb-0 text-body-secondary">© 2025, Galería Fotográfica</p>
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none" aria-label="Bootstrap"></a>
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link px-2 text-body-secondary">Galería</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">Sobre Nosotros</a></li>
+        </ul>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
