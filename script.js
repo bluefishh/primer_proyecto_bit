@@ -30,23 +30,54 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Se agrega evento para la búsqueda de imágenes
-    document.getElementById('inputBuscar').addEventListener('input', (event) => {
-        // Se obtiene el criterio de búsqueda
-        const buscarString = event.target.value.toLowerCase();
-        
-        // Se busca en todos los cards con imágenes
-        document.querySelectorAll('.card').forEach(card => {
-            const title = card.querySelector('.card-title').textContent.toLowerCase();
-            const author = card.querySelector('.card-subtitle').textContent.toLowerCase();
+    const inputBuscar = document.getElementById('inputBuscar');
+    if (inputBuscar) {
+        inputBuscar.addEventListener('input', (event) => {
+            // Se obtiene el criterio de búsqueda
+            const buscarString = event.target.value.toLowerCase();
 
-            // Se valida el criterio de búsqueda en el título y autor de la imagen
-            if (title.includes(buscarString) || author.includes(buscarString)) {
-                // En caso de coincidir se mantiene visible el card
-                card.style.display = 'block';
-            } else {
-                // En caso de que no coincida oculta el card
-                card.style.display = 'none';
+            // Se busca en todos los cards con imágenes
+            document.querySelectorAll('.card').forEach(card => {
+                const title = card.querySelector('.card-title').textContent.toLowerCase();
+                const author = card.querySelector('.card-subtitle').textContent.toLowerCase();
+
+                // Se valida el criterio de búsqueda en el título y autor de la imagen
+                if (title.includes(buscarString) || author.includes(buscarString)) {
+                    // En caso de coincidir se mantiene visible el card
+                    card.style.display = 'block';
+                } else {
+                    // En caso de que no coincida oculta el card
+                    card.style.display = 'none';
+                }
+            });
+        });
+    }
+
+    // Validación del formulario de contacto
+    const form = document.getElementById('formularioContacto');
+    if (form) {
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            form.querySelectorAll('.campo-invalido').forEach(el => el.textContent = '');
+
+            let isValid = true;
+            form.querySelectorAll('input[required], textarea[required]').forEach(input => {
+                if (!input.value.trim()) {
+                    isValid = false;
+                    const errorEl = input.nextElementSibling;
+                    input.style.borderColor = 'var(--danger-color)';
+                    if (errorEl) {
+                        errorEl.textContent = 'Este campo es obligatorio.';
+                    }
+                } else {
+                    input.style.borderColor = '';
+                }
+            });
+
+            if (isValid) {
+                document.getElementById('mensaje-enviado').classList.remove('d-none');
+                form.reset();
             }
         });
-    });
+    }
 });

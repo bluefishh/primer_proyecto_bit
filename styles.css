@@ -90,3 +90,14 @@ body {
     transform: scale(1.05);
     box-shadow: var(--shadow-lg);
 }
+
+/* Formulrio de contacto */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(var(--bs-primary-rgb), 0.25);
+}
+
+.campo-invalido {
+    display: block;
+    color: var(--danger-color);
+}
