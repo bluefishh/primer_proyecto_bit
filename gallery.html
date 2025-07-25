@@ -20,7 +20,11 @@
                     <i class="bi bi-camera text-primary me-2 fs-3"></i>
                 </a>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Inicio</a>
@@ -45,14 +49,17 @@
                 <div class="text-center mb-5">
                     <h1 class="display-4 fw-bold mb-4">Galería de Fotografías</h1>
                     <p class="lead text-muted">
-                        Proyecto de galería de fotografías, podrás explorar imágenes artísticas con sus autores y categorías.
+                        Proyecto de galería de fotografías, podrás explorar imágenes artísticas con sus autores y
+                        categorías.
                     </p>
                 </div>
                 <div class="row g-3 align-items-center">
                     <div class="col">
                         <div class="position-relative">
-                            <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
-                            <input type="text" id="inputBuscar" class="form-control ps-5" placeholder="Buscar imágenes, autores...">
+                            <i
+                                class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
+                            <input type="text" id="inputBuscar" class="form-control ps-5"
+                                placeholder="Buscar imágenes, autores...">
                         </div>
                     </div>
                 </div>
@@ -60,7 +67,7 @@
         </section>
 
         <!-- Barra lateral de las categorías y contenido de imágenes -->
-        <aside class="container mt-5 pt-4">
+        <aside class="container pt-4 mt-md-5">
             <div class="row">
                 <div class="col-md-3">
                     <div>
@@ -69,39 +76,23 @@
                             <p class="small">Categorías de fotos disponibles en la galería</p>
                             <hr>
                             <div class="list-group" id="alertas-tab" role="tablist">
-                                <a href="#todas" class="list-group-item list-group-item-action active"
-                                    id="todas-tab"
-                                    data-bs-toggle="tab"
-                                    role="tab"
-                                    aria-controls="todas"
-                                    aria-selected="true">
+                                <a href="#todas" class="list-group-item list-group-item-action active" id="todas-tab"
+                                    data-bs-toggle="tab" role="tab" aria-controls="todas" aria-selected="true">
                                     <div>Todas</div>
                                     <small>Todas las categorías existentes</small>
                                 </a>
-                                <a href="#naturaleza" class="list-group-item list-group-item-action"
-                                    id="naturaleza-tab"
-                                    data-bs-toggle="tab"
-                                    role="tab"
-                                    aria-controls="naturaleza"
-                                    aria-selected="false">
+                                <a href="#naturaleza" class="list-group-item list-group-item-action" id="naturaleza-tab"
+                                    data-bs-toggle="tab" role="tab" aria-controls="naturaleza" aria-selected="false">
                                     <div>Naturaleza</div>
                                     <small>Fotografías relacionadas con naturaleza</small>
                                 </a>
-                                <a href="#animales" class="list-group-item list-group-item-action"
-                                    id="animales-tab"
-                                    data-bs-toggle="tab"
-                                    role="tab"
-                                    aria-controls="animales"
-                                    aria-selected="false">
+                                <a href="#animales" class="list-group-item list-group-item-action" id="animales-tab"
+                                    data-bs-toggle="tab" role="tab" aria-controls="animales" aria-selected="false">
                                     <div>Animales</div>
                                     <small>Fotografías relacionadas con animales</small>
                                 </a>
-                                <a href="#lugares" class="list-group-item list-group-item-action"
-                                    id="lugares-tab"
-                                    data-bs-toggle="tab"
-                                    role="tab"
-                                    aria-controls="lugares"
-                                    aria-selected="false">
+                                <a href="#lugares" class="list-group-item list-group-item-action" id="lugares-tab"
+                                    data-bs-toggle="tab" role="tab" aria-controls="lugares" aria-selected="false">
                                     <div>Lugares</div>
                                     <small>Fotografías relacionadas con lugares del mundo</small>
                                 </a>
@@ -110,29 +101,58 @@
                     </div>
                 </div>
 
-                <div class="col-md-9">
+                <div class="col-md-9" id="fotos-tabContent-gallery">
                     <div class="tab-content" id="fotos-tabContent">
                         <div class="tab-pane fade show active" id="todas" role="tabpanel" aria-labelledby="todas-tab">
                             <div class="col d-flex justify-content-start">
-                                <div class="card card-gallery shadow-sm" data-description="Una vista espectacular de las montañas Kaçkar al amanecer.">
+                                <div class="card card-gallery shadow-sm"
+                                    data-description="Animal y vida salvaje en su hábitat natural.">
                                     <img src="assets/1.jpg" class="card-img-top" alt="Featured Image 1">
                                     <div class="card-body">
-                                        <h5 class="card-title">Kaçkar mountains, Turkey</h5>
-                                        <h6 class="card-subtitle mb-2 text-body-secondary">Özer Yenihayat</h6>
+                                        <h5 class="card-title">Animal, Wild, Wildlife</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary">Isabella Martinez</h6>
                                     </div>
                                 </div>
-                                <div class="card card-gallery shadow-sm" data-description="Un hermoso perro golden retriever con un brillo especial en sus ojos.">
+                                <div class="card card-gallery shadow-sm"
+                                    data-description="Un hermoso perro golden retriever con un brillo especial en sus ojos.">
                                     <img src="assets/2.jpg" class="card-img-top" alt="Featured Image 2">
                                     <div class="card-body">
                                         <h5 class="card-title">Golden retriever puppy amber</h5>
-                                        <h6 class="card-subtitle mb-2 text-body-secondary">JACLOU-DL</h6>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary">David Kim</h6>
                                     </div>
                                 </div>
-                                <div class="card card-home shadow-sm" data-description="Una vista panorámica del monte Utliberg en Suiza, capturando su belleza natural.">
+                                <div class="card card-gallery shadow-sm"
+                                    data-description="Una vista panorámica del monte Utliberg en Suiza, capturando su belleza natural.">
                                     <img src="assets/3.jpg" class="card-img-top" alt="Featured Image 2">
                                     <div class="card-body">
                                         <h5 class="card-title">Utliberg, Switzerland</h5>
-                                        <h6 class="card-subtitle mb-2 text-body-secondary">Kathirinchen</h6>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary">Elena Rodriguez</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex justify-content-start mt-4">
+                                <div class="card card-gallery shadow-sm"
+                                    data-description="Una vista impresionante de Reinebringen en las Islas Lofoten, Noruega.">
+                                    <img src="assets/4.jpg" class="card-img-top" alt="Featured Image 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Reinebringen, Lofoten, Islands</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary">Elena Rodriguez</h6>
+                                    </div>
+                                </div>
+                                <div class="card card-gallery shadow-sm"
+                                    data-description="Montañas, lago, Canadá, una vista espectacular al amanecer.">
+                                    <img src="assets/5.jpg" class="card-img-top" alt="Featured Image 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mountains, Lake, Canada</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary">David Kim</h6>
+                                    </div>
+                                </div>
+                                <div class="card card-gallery shadow-sm"
+                                    data-description="Una vista espectacular de Siberia, capturando la serenidad del lago y la naturaleza circundante.">
+                                    <img src="assets/6.jpg" class="card-img-top" alt="Featured Image 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Siberia, Lake, Nature</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary">Isabella Martinez</h6>
                                     </div>
                                 </div>
                             </div>
@@ -140,24 +160,41 @@
 
                         <div class="tab-pane fade" id="naturaleza" role="tabpanel" aria-labelledby="naturaleza-tab">
                             <div class="col d-flex justify-content-start">
-                                
+                                <div class="card card-gallery shadow-sm"
+                                    data-description="Montañas, lago, Canadá, una vista espectacular al amanecer.">
+                                    <img src="assets/5.jpg" class="card-img-top" alt="Featured Image 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mountains, Lake, Canada</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary">David Kim</h6>
+                                    </div>
+                                </div>
+                                <div class="card card-gallery shadow-sm"
+                                    data-description="Una vista espectacular de Siberia, capturando la serenidad del lago y la naturaleza circundante.">
+                                    <img src="assets/6.jpg" class="card-img-top" alt="Featured Image 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Siberia, Lake, Nature</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary">Isabella Martinez</h6>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <div class="tab-pane fade" id="animales" role="tabpanel" aria-labelledby="animales-tab">
                             <div class="col d-flex justify-content-start">
-                                <div class="card card-gallery shadow-sm" data-description="Un hermoso perro golden retriever con un brillo especial en sus ojos.">
+                                <div class="card card-gallery shadow-sm"
+                                    data-description="Un hermoso perro golden retriever con un brillo especial en sus ojos.">
                                     <img src="assets/2.jpg" class="card-img-top" alt="Featured Image 2">
                                     <div class="card-body">
                                         <h5 class="card-title">Golden retriever puppy amber</h5>
-                                        <h6 class="card-subtitle mb-2 text-body-secondary">JACLOU-DL</h6>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary">David Kim</h6>
                                     </div>
                                 </div>
-                                <div class="card card-gallery shadow-sm" data-description="Animal y vida salvaje en su hábitat natural.">
+                                <div class="card card-gallery shadow-sm"
+                                    data-description="Animal y vida salvaje en su hábitat natural.">
                                     <img src="assets/1.jpg" class="card-img-top" alt="Featured Image 1">
                                     <div class="card-body">
-                                        <h5 class="card-title">Animal, Wild, Wildlife image.</h5>
-                                        <h6 class="card-subtitle mb-2 text-body-secondary">javiercalvoparapar</h6>
+                                        <h5 class="card-title">Animal, Wild, Wildlife</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary">Isabella Martinez</h6>
                                     </div>
                                 </div>
                             </div>
@@ -165,11 +202,18 @@
 
                         <div class="tab-pane fade" id="lugares" role="tabpanel" aria-labelledby="lugares-tab">
                             <div class="col d-flex justify-content-start">
-                                <div class="card card-home shadow-sm" data-description="Una vista panorámica del monte Utliberg en Suiza, capturando su belleza natural.">
+                                <div class="card card-gallery shadow-sm"data-description="Una vista panorámica del monte Utliberg en Suiza, capturando su belleza natural.">
                                     <img src="assets/3.jpg" class="card-img-top" alt="Featured Image 2">
                                     <div class="card-body">
                                         <h5 class="card-title">Utliberg, Switzerland</h5>
-                                        <h6 class="card-subtitle mb-2 text-body-secondary">Kathirinchen</h6>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary">Elena Rodriguez</h6>
+                                    </div>
+                                </div>
+                                <div class="card card-gallery shadow-sm" data-description="Una vista impresionante de Reinebringen en las Islas Lofoten, Noruega.">
+                                    <img src="assets/4.jpg" class="card-img-top" alt="Featured Image 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Reinebringen, Lofoten, Islands</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary">Elena Rodriguez</h6>
                                     </div>
                                 </div>
                             </div>
@@ -177,8 +221,9 @@
                     </div>
                 </div>
             </div>
+            </div>
         </aside>
-        
+
         <!-- Sección con modal para detalle de imágenes -->
         <section>
             <div class="modal fade" id="imagenModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
@@ -186,7 +231,8 @@
                     <div class="modal-content">
                         <div class="modal-header align-baseline">
                             <h5 class="modal-title" id="imagenModalLabel"></h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Cerrar"></button>
                         </div>
 
                         <div class="modal-body text-center">
@@ -202,15 +248,19 @@
 
     <!-- Pie de página -->
     <footer class="d-flex flex-wrap justify-content-between align-items-center p-3 m-4 border-top bg-white">
-        <p class="col-md-4 mb-0 text-body-secondary">© 2025, Galería Fotográfica | Desarrollado por <a href="https://github.com/bluefishh" target="_blank">Edison Cubillos</a></p>
-        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none" aria-label="Bootstrap"></a>
+        <p class="col-md-4 mb-0 text-body-secondary">© 2025, Galería Fotográfica | Desarrollado por <a
+                href="https://github.com/bluefishh" target="_blank">Edison Cubillos</a></p>
+        <a href="/"
+            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+            aria-label="Bootstrap"></a>
         <ul class="nav col-md-4 justify-content-end">
             <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
-            <li class="nav-item"><a href="gallery.html" class="nav-link px-2 text-body-secondary active">Galería</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link px-2 text-body-secondary active">Galería</a>
+            </li>
             <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">Sobre Nosotros</a></li>
         </ul>
     </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>

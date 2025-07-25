@@ -33,7 +33,7 @@ body {
     border: none !important;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link.active {
     color: var(--primary-color) !important;
     border: none !important;
 }
@@ -86,11 +86,6 @@ body {
     width: 100%;
 }
 
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: var(--shadow-lg);
-}
-
 /* Formulrio de contacto */
 .form-control:focus {
     border-color: var(--primary-color);
@@ -100,4 +95,64 @@ body {
 .campo-invalido {
     display: block;
     color: var(--danger-color);
+}
+
+@media (hover: hover) {
+	.nav-link:hover {
+		color: var(--primary-color) !important;
+		border: none !important;
+	}
+
+	.card:hover {
+        transform: scale(1.05);
+        box-shadow: var(--shadow-lg);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #navbarNav ul li {
+        margin-bottom: 1rem;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .nav li {
+        margin-bottom: 1rem;
+    }
+
+    footer .nav li:first-child {
+        margin-top: 2rem;
+    }
+
+    aside {
+        margin-top: 0 !important;
+    }
+
+    #fotos-tabContent-gallery {
+        margin-top: 2rem ;
+    }
+
+    #fotos-tabContent #todas div {
+        flex-direction: column;
+        width: 100%;
+    }
+
+	#fotos-tabContent #todas .card {
+        margin-top: 1.5rem;
+    }
+
+	#datosContacto {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
