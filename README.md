@@ -1,6 +1,9 @@
 # Galería de Fotografías
 Bienvenido a la galería de fotografías. Aquí encontrarás una colección de imágenes organizadas en diferentes categorías. Puedes navegar por las categorías para ver las fotos.
 
+# Enlace GitHub Pages
+[Visitar la Galería de Fotografías](https://bluefishh.github.io/primer_proyecto_bit/)
+
 El proyecto fue creado para el diplomado de **Desarrollo Web** de BIT, fue elaborado por **Edison Harvey Cubillos Casallas**.
 
 ## Categorías
